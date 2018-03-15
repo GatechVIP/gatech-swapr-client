@@ -4,7 +4,9 @@ The SWAPR front-end thin client.
 
 ## Theoretical usage steps
 
-1. From my commit 0f4bd4307de263ccf3edc45e9a9833611c78fa48, run the npm script that just calls webpack. This will build the js bundle to the `dist` directory:
+0. pull changes from `react` branch
+
+1. Run the npm script that just calls webpack. This will build the js bundle to the `dist` directory:
 
 `npm run webpack`
 
