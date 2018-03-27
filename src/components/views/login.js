@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Login extends React.Component {
+/*class Login extends React.Component {
     constructor(props) {
         super(props);
         this.state = {username: '', password: ''};
@@ -36,7 +36,7 @@ class Login extends React.Component {
 
     render() {
         return (
-            <div id="login">
+            <div>
                 <form onSubmit={this.handleSubmit}>
                     <label>Username:</label>
                     <input type="text" name="username" onChange={this.handleChange} />
@@ -49,6 +49,15 @@ class Login extends React.Component {
             </div>
         );
     }
-}
+};*/
+class Login extends React.Component {
+    render() {
+        return (
+            <div>
+                <h1>This is the login page</h1>
+            </div>
+        );
+    }
+};
 
 export default Login;
