@@ -1,63 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
-/*class Login extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {username: '', password: ''};
-
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
-    }
-
-    handleChange(event) {
-        this.setState({ [event.target.name]: event.target.value});
-    }
-
-    handleSubmit(event) {
-        // Send this.state.username and this.state.password as parameters for a login HTTP request
-        fetch('swapr-dev-address.gatech.edu/login?username='+this.state.username+'&password='+this.state.password)
-            .then((err, response) => (err, response.json()))
-            .then((err, responseJson) => {
-                if (err)
-                    alert("Login failed, please try again");
-                else {
-                    const location = this.props.location;
-                    if (location.state && location.state.nextPathname)
-                        browserHistory.push(location.state.nextPathname);
-                    else
-                        browserHistory.push('/dashboard');
-                }
-            })
-            .catch((err) => {
-                // Handle error
-                console.log(err);
-            });
-    }
-
+class Login extends Component {
     render() {
         return (
-            <div>
-                <form onSubmit={this.handleSubmit}>
-                    <label>Username:</label>
-                    <input type="text" name="username" onChange={this.handleChange} />
+            <div className="Login">
+                <nav>
+                    <ul>
+                        <li><Link to='/'>Home</Link></li>
+                    </ul>
+                </nav>
 
-                    <label>Password:</label>
-                    <input type="text" name="password" onChange={this.handleChange} />
-
-                    <input type="submit" value="Login" />
-                </form>
+                <h1>Bruhhhhhhhhhh</h1>
             </div>
         );
     }
-};*/
-class Login extends React.Component {
-    render() {
-        return (
-            <div>
-                <h1>This is the login page</h1>
-            </div>
-        );
-    }
-};
+}
 
 export default Login;

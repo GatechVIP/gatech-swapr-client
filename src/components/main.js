@@ -1,15 +1,19 @@
-import React from 'react';
-import { BrowserRouter as Router, browserHistory, Switch, Route } from 'react-router-dom';
+import React, { Component } from 'react';
+import { Switch, Route } from 'react-router-dom';
 import Home from './views/Home';
 import Login from './views/Login';
 
-const Main = () => (
-    <Router history={browserHistory}>
-        <Switch>
-            <Route exact path="/" component={Home}/>
-            <Route path="/login" component={Login}/>
-        </Switch>
-    </Router>
-);
+class Main extends Component {
+    render() {
+        return (
+            <div className="Main">
+                <Switch>
+                    <Route exact path='/' component={Home}/>
+                    <Route path='/login' component={Login}/>
+                </Switch>
+            </div>
+        );
+    }
+}
 
 export default Main;
